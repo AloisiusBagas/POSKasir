@@ -1,0 +1,26 @@
+﻿@page "{id}"
+@model PosKasir.Pages.Cart.UpdateModel
+@{
+}
+    <form method="post">
+        <div>
+            <label asp-for="Form.UserId"></label>
+            <input asp-for="Form.UserId" readonly disabled />
+            <span asp-validation-for="Form.UserId"></span>
+            <br />
+            <label asp-for="Form.ProductId"></label>
+            <input asp-for="Form.ProductId" readonly disabled />
+            <span asp-validation-for="Form.ProductId"></span>
+            <br />
+            <label asp-for="Form.ProductName"></label>
+            <input asp-for="Form.ProductName" readonly disabled />
+            <span asp-validation-for="Form.ProductName"></span>
+            <br />
+            <label asp-for="Form.Quantity"></label>
+            <input asp-for="Form.Quantity" />
+            <span asp-validation-for="Form.Quantity"></span>
+        </div>
+        <div>
+            <button type="submit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Update Cart</button>
+        </div>
+    </form>

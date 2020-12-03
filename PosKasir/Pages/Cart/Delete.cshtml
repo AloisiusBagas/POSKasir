@@ -1,0 +1,13 @@
+﻿@page "{id}"
+@model PosKasir.Pages.Cart.DeleteModel
+@{
+}
+
+<h1>Delete data</h1>
+<p class="font-weight-bold">Data Confirmation</p>
+<form method="post">
+    <p>Product Name : @Model.Forms.ProductName</p>
+    <p>Product Quantity : @Model.Forms.Quantity</p>
+    <h5>Are you sure want to delete this data</h5>
+    <button type="submit" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i> Delete</button>
+</form>

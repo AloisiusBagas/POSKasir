@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="client\js\components\DetailTransaction.vue" />
+    <None Remove="client\js\components\ListBarang.vue" />
+    <None Remove="client\js\components\ListBarangSqlite.vue" />
+    <None Remove="client\js\components\ListTransaction.vue" />
+    <None Remove="client\js\components\ListTransactionUser.vue" />
+    <None Remove="client\js\components\UpdateBarang.vue" />
+    <None Remove="client\js\components\UpdateBarangSqlite.vue" />
+    <None Remove="client\js\components\UserRegister.vue" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.StackExchangeRedis" Version="3.1.3" />
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="3.8.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PosKasir.Entities\PosKasir.Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="client\js\components\DetailTransaction.vue" />
+    <TypeScriptCompile Include="client\js\components\ListBarang.vue" />
+    <TypeScriptCompile Include="client\js\components\ListBarangSqlite.vue" />
+    <TypeScriptCompile Include="client\js\components\ListTransaction.vue" />
+    <TypeScriptCompile Include="client\js\components\ListTransactionUser.vue" />
+    <TypeScriptCompile Include="client\js\components\UpdateBarang.vue" />
+    <TypeScriptCompile Include="client\js\components\UpdateBarangSqlite.vue" />
+    <TypeScriptCompile Include="client\js\components\UserRegister.vue" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="client\js\Service\" />
+  </ItemGroup>
+
+
+
+</Project>

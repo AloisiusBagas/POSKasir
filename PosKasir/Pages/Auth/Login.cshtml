@@ -1,0 +1,20 @@
+﻿@page
+@model PosKasir.Pages.Auth.LoginModel
+@{
+}
+
+<h1>Login</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Forms.Username"></label>
+        <input class="form-control" asp-for="Forms.Username" placeholder="Username" />
+        <span asp-validation-for="Forms.Username" class="font-italic text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Forms.Password"></label>
+        <input type="password" class="form-control" asp-for="Forms.Password" placeholder="Username" />
+        <span asp-validation-for="Forms.Password" class="font-italic text-danger"></span>
+    </div>
+    <button class="btn btn-primary" type="submit">Login</button>
+    <p class="font-italic text-danger">@Model.SuccessMessage</p>
+</form>

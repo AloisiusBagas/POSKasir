@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PosKasir", "PosKasir\PosKasir.csproj", "{36687B18-DF33-4566-85B4-FF9700329FBC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PosKasir.Entities", "PosKasir.Entities\PosKasir.Entities.csproj", "{6F59B746-E463-40C8-8DEF-8008328708BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36687B18-DF33-4566-85B4-FF9700329FBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36687B18-DF33-4566-85B4-FF9700329FBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36687B18-DF33-4566-85B4-FF9700329FBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36687B18-DF33-4566-85B4-FF9700329FBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F59B746-E463-40C8-8DEF-8008328708BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F59B746-E463-40C8-8DEF-8008328708BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F59B746-E463-40C8-8DEF-8008328708BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F59B746-E463-40C8-8DEF-8008328708BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CBF034D-01D9-4050-8B13-4C606181CD02}
+	EndGlobalSection
+EndGlobal

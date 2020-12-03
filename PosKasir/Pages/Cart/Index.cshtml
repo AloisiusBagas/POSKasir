@@ -1,0 +1,48 @@
+﻿@page
+@model PosKasir.Pages.Cart.IndexModel
+@{
+}
+
+<h1>Purchase List</h1>
+<a href="~/cart/insert" class="btn btn-success"> <i class="fa fa-plus" aria-hidden="true"></i> Insert</a>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>User ID</th>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Purchase Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody class="table-hover">
+        @foreach (var item in Model.purchaseCartModels)
+        {
+        <tr>
+            <td>@item.UserId</td>
+            <td>@item.ProductId</td>
+            <td>@item.ProductName</td>
+            <td>@item.Quantity</td>
+            <td>@item.PurchaseCartDate</td>
+            <td>
+                <a asp-page="./update" asp-route-id="@Model.change(item.ProductId)" class="btn btn-warning">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit
+                </a>
+                <a asp-page="./Delete" asp-route-id="@Model.change(item.ProductId)" class="btn btn-danger">
+                    <i class="fa fa-trash" aria-hidden="true"></i> Delete
+                </a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    <form method="post">
+        <button class="btn btn-primary" type="submit">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i> Order
+        </button>
+    </form>
+    <p class="font-italic text-success">@Model.SuccessMessage</p>
+</div>

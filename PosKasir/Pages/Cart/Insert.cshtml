@@ -1,0 +1,28 @@
+﻿@page
+@model PosKasir.Pages.Cart.InsertModel
+@{
+}
+
+<h1>Insert Cart</h1>
+<form method="post">
+
+    <div>
+        Product Name :
+        <select asp-for="Form.ProductId">
+            @foreach (var item in Model.ListProduct)
+            {
+                <option value="@item.ProductId">@item.ProductName, Stock: @item.Stock</option>
+            }
+        </select>
+    </div>
+    <div>
+        <label asp-for="Form.Quantity"></label>
+        <input asp-for="Form.Quantity" />
+        <span asp-validation-for="Form.Quantity"></span>
+
+    </div>
+    <br />
+    <button type="submit" class="btn btn-success"> <i class="fa fa-plus" aria-hidden="true"></i> Add to Cart</button>
+</form>
+<p>@Model.successmessage</p>
+
